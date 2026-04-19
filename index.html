@@ -6,19 +6,19 @@
         <title>My Portfolio</title>
         <link rel="stylesheet" href="./styles/index-styles.css">
         <script type="module" src="./scripts/main.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
     </head>
     <body class="body">
         <header class="header">
             <button class="menu-btn">Menu</button>
-            <a href="$" class="contact-btn">Contact Me</a>
+            <a href="#contact-section" class="contact-btn">Contact Me</a>
             <nav class="nav">
                 <ul class="nav-links">
-                    <li><a href="#hero-section" class="nav-link"><img src="./assets/icons/home-svgrepo-com.svg" width="20" height="20"><span>Home</span></a></li>
-                    <li><a href="#projects-section" class="nav-link"><img src="./assets/icons/code-svgrepo-com.svg" width="20" height="20"><span>Projects</span></a></li>
-                    <li><a href="#about-me-section" class="nav-link"><img src="./assets/icons/avatar-svgrepo-com.svg" width="20" height="20"><span>About Me</span></a></li>
-                    <li><a href="#services-section" class="nav-link"><img src="./assets/tools-svgrepo-com(1).svg" width="20" height="20"><span>Services</span></a></li>
-                    <!--<li><a href="$" class="nav-link"><img src="./assets/icons/movie-rating-review-svgrepo-com.svg" width="20" height="20"><span>Testimonials</span></a></li>-->
-                    <li><a href="#contact-section" class="nav-link"><img src="./assets/icons/mail-plus-svgrepo-com.svg" width="20" height="20"><span>Contact Me</span></a></li>
+                    <li><a href="#hero-section" class="nav-link"><img src="./assets/icons/home-svgrepo-com.svg" alt="Home icon" width="20" height="20"><span>Home</span></a></li>
+                    <li><a href="#projects-section" class="nav-link"><img src="./assets/icons/code-svgrepo-com.svg" alt="Code icon" width="20" height="20"><span>Projects</span></a></li>
+                    <li><a href="#about-me-section" class="nav-link"><img src="./assets/icons/avatar-svgrepo-com.svg" alt="Avatar icon" width="20" height="20"><span>About Me</span></a></li>
+                    <li><a href="#services-section" class="nav-link"><img src="./assets/icons/tools-svgrepo-com.svg" alt="Tools icon" width="35" height="35"><span>Services</span></a></li>
+                    <li><a href="#contact-section" class="nav-link"><img src="./assets/icons/mail-plus-svgrepo-com.svg" alt="Mail icon" width="20" height="20"><span>Contact Me</span></a></li>
                 </ul>
             </nav>
         </header>
@@ -37,25 +37,25 @@
                     </div>
                     <div class="hero-contact-info">
                         <div class="social-links">
-                            <a href="$" class="social-link">
-                                <img src="./assets/gmail-svgrepo-com.svg" width="30" height="30">
+                            <a href="mailto:101muzi.io@gmail.com" class="social-link">
+                                <img src="./assets/icons/gmail-svgrepo-com.svg" alt="Gmail icon" width="30" height="30">
                             </a>
-                            <a href="$" class="social-link">
-                                <img src="./assets/github-142-svgrepo-com.svg" width="30" height="30">
+                            <a href="https://github.com/MUZI101-DIY" class="social-link">
+                                <img src="./assets/icons/github-142-svgrepo-com.svg" alt="GitHub icon" width="30" height="30">
                             </a>
-                            <a href="$" class="social-link">
-                                <img src="./assets/linkedin-svgrepo-com.svg" width="40" height="40">
+                            <a href="https://www.linkedin.com/in/sakhumuzi-dube-566405356/" class="social-link">
+                                <img src="./assets/icons/linkedin-svgrepo-com.svg" alt="LinkedIn icon" width="40" height="40">
                             </a>
                         </div>
                         <div class="call-to-action-container">
-                            <button class="hire-me-btn">
+                            <a href="#contact-section" class="hire-me-btn">
                                 <span>Hire Me</span>
-                                <img src="./assets/icons/mail-plus-svgrepo-com.svg" width="30" height="30">
-                            </button>
-                            <button class="view-projects-btn">
+                                <img src="./assets/icons/mail-plus-svgrepo-com.svg" alt="Mail icon" width="30" height="30">
+                            </a>
+                            <a href="#projects-section" class="view-projects-btn">
                                 <span>View Projects</span>
-                                <img src="./assets/icons/eye-svgrepo-com(1).svg" width="30" height="30">
-                            </button>
+                                <img src="./assets/icons/eye-svgrepo-com(1).svg" alt="Eye icon" width="30" height="30">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -64,50 +64,23 @@
                 <h2 class="projects-header">Featured Projects</h2>
                 <div class="projects-container">
                     <div class="project-viewer-container">
-                        <div class="preview-image-container">
-                            <img src="./assets/Screenshot 2026-04-14 at 03-57-15 iCYOU - follower analyzer.png" width="100" height="100">
-                        </div>
+                        <div class="preview-image-container"></div>
                         <div class="image-description-container">
                             <div class="description-container">
-                                <p class="description">Find out who doesn't follow you back on instagram fast, securely and completely free.</p>
+                                <p class="description">A website that analyzes your data to find non followers on your profile.</p>
                              </div>
                             <div class="more-on-project">
                                 <div class="viewer-project-title">
-                                    <h2>iCYOU: Instagram Analyzer</h2>
+                                    <h2 class="project-desc-name">iCYOU: Instagram Analyzer</h2>
                                 </div>
                                 <div class="view-project-container">
-                                    <a href="#" class="view-project-btn"><span>View</span><img src="./assets/external-link-svgrepo-com.svg" width="20" height="20"></a>
+                                    <a href="https://icyou.netlify.app/" class="view-project-btn"><span>View</span><img src="./assets/icons/external-link-svgrepo-com.svg" alt="External link icon" width="20" height="20"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="project-list-container">
-                        <div class="project-list">
-                            <button class="project">
-                                <div class="project-thumbnail">
-                                    <img src="./assets/1776196230195.png" width="50" height="50">
-                                </div>
-                                <div class="thumbnail-title">
-                                    <p>iCYOU: Instagram Analyzer</p>
-                                </div>
-                            </button>
-                            <button class="project">
-                                <div class="project-thumbnail">
-                                    <img src="./assets/file_000000008d70622fb7a8874b7f9da428.png" width="50" height="50">
-                                </div>
-                                <div class="thumbnail-title">
-                                   <p>GradeX: Grade Calculator</p> 
-                                </div>
-                            </button>
-                            <button class="project">
-                                <div class="project-thumbnail">
-                                    <img src="./assets/1776196236634.png" width="50" height="50">
-                                </div>
-                                <div class="thumbnail-title">
-                                    <p>Dentalz: Dental Services Landing Page</p>            
-                                </div>
-                            </button>
-                        </div>
+                        <div class="project-list"></div>
                     </div>
                 </div>
             </section>
@@ -117,10 +90,10 @@
                         <h2 class="about-header">About Me</h2>
                         <div class="about-paragraph-container">
                             <p class="about-paragraph">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias incidunt nulla vitae cum asperiores cumque.
+                                I'm a Frontend Developer with a passion for building clean, scalable and performant web applications.
                             </p>
                             <p class="about-paragraph">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias incidunt nulla vitae cum asperiores cumque.
+                                I thrive on turning complex problems into intuitive interface designs that not only look great but function flawlessly across all devices.
                             </p>
                         </div>
                     </div>
@@ -140,19 +113,19 @@
                             <div class="card-body">
                                 <div class="option">
                                     <div>
-                                        <img src="assets/check-svgrepo-com.svg" width="25" height="25">
+                                        <img src="assets/icons/check-svgrepo-com.svg" alt="Check mark icon" width="25" height="25">
                                         <span>Custom landing pages or Full websites.</span>
                                     </div>
                                     <div>
-                                        <img src="assets/check-svgrepo-com.svg" width="25" height="25">
+                                        <img src="assets/icons/check-svgrepo-com.svg" alt="Check mark icon" width="25" height="25">
                                         <span>Mobile friendly, modern design.</span>
                                     </div>
                                     <div>
-                                        <img src="assets/check-svgrepo-com.svg" width="25" height="25">
+                                        <img src="assets/icons/check-svgrepo-com.svg" alt="Check mark icon" width="25" height="25">
                                         <span>Built to respect your brand.</span>
                                     </div>
                                     <div>
-                                        <img src="assets/check-svgrepo-com.svg" width="25" height="25">
+                                        <img src="assets/icons/check-svgrepo-com.svg" alt="Check mark icon" width="25" height="25">
                                         <span>Ready to launch.</span>
                                     </div>
                                 </div>
@@ -165,19 +138,19 @@
                             <div class="card-body">
                                 <div class="option">
                                     <div>
-                                        <img src="assets/check-svgrepo-com.svg" width="25" height="25">
+                                        <img src="assets/icons/check-svgrepo-com.svg" alt="Check mark icon" width="25" height="25">
                                         <span>Improved user experience</span>
                                     </div>
                                     <div>
-                                        <img src="assets/check-svgrepo-com.svg" width="25" height="25">
+                                        <img src="assets/icons/check-svgrepo-com.svg" alt="Check mark icon" width="25" height="25">
                                         <span>Faster loading times.</span>
                                     </div>
                                     <div>
-                                        <img src="assets/check-svgrepo-com.svg" width="25" height="25">
+                                        <img src="assets/icons/check-svgrepo-com.svg" alt="Check mark icon" width="25" height="25">
                                         <span>Reduced lag and delays.</span>
                                     </div>
                                     <div>
-                                        <img src="assets/check-svgrepo-com.svg" width="25" height="25">
+                                        <img src="assets/icons/check-svgrepo-com.svg" alt="Check mark icon" width="25" height="25">
                                         <span>Better performance on mobile.</span>
                                     </div>
                                 </div>
@@ -190,19 +163,19 @@
                             <div class="card-body">
                                 <div class="option">
                                    <div>
-                                        <img src="assets/check-svgrepo-com.svg" width="25" height="25">
+                                        <img src="assets/icons/check-svgrepo-com.svg" alt="Check mark icon" width="25" height="25">
                                         <span>Better readability and contrast.</span>
                                     </div>
                                     <div>
-                                        <img src="assets/check-svgrepo-com.svg" width="25" height="25">
+                                        <img src="assets/icons/check-svgrepo-com.svg" alt="Check mark icon" width="25" height="25">
                                         <span>Improved navigation.</span>
                                     </div>
                                     <div>
-                                        <img src="assets/check-svgrepo-com.svg" width="25" height="25">
+                                        <img src="assets/icons/check-svgrepo-com.svg" alt="Check mark icon" width="25" height="25">
                                         <span>More inclusive user experience.</span>
                                     </div>
                                     <div>
-                                        <img src="assets/check-svgrepo-com.svg" width="25" height="25">
+                                        <img src="assets/icons/check-svgrepo-com.svg" alt="Check mark icon" width="25" height="25">
                                         <span>Cleaner, more usable design.</span>
                                     </div>
                                 </div>
@@ -211,9 +184,9 @@
                     </div>
                     <div class="tech-stack-container">
                         <div class="tech-stack-logos">
-                            <img src="./assets/html-124-svgrepo-com.svg" width="50" height="50">
-                            <img src="./assets/css3-02-svgrepo-com.svg" width="50" height="50">
-                            <img src="./assets/js01-svgrepo-com.svg" width="50" height="50">
+                            <img src="./assets/icons/html-124-svgrepo-com.svg" alt="HTML5 icon" width="50" height="50">
+                            <img src="./assets/icons/css3-02-svgrepo-com.svg" alt="CSS3 icon" width="50" height="50">
+                            <img src="./assets/icons/js01-svgrepo-com.svg" alt="JavaScript icon" width="50" height="50">
                         </div>
                         <div class="tech-stack-names">
                             <span>HTML5</span>
@@ -232,18 +205,18 @@
                         <div class="form-container">
                             <form action="#" method="post" class="contact-form">
                                 <label>Name</label>
-                                <input type="text" name="name" placeholder="e.g Michael" required class="contact-input">
+                                <input type="text" name="name" id="name" placeholder="e.g Michael" required class="contact-input">
                                 <label>Email</label>
-                                <input type="email" name="email" placeholder="e.g michael23@gmail.com" required class="contact-input">
+                                <input type="email" name="email" id="email" placeholder="e.g michael23@gmail.com" required class="contact-input">
                                 <label>Message</label>
-                                <textarea name="message" placeholder="Your Message..." required class="contact-textarea"></textarea>
+                                <textarea name="message" id="message" placeholder="Your Message..." required class="contact-textarea"></textarea>
                                 <button type="submit" class="send-message-btn">Send Message</button>
                             </form>
                         </div>
                         <div class="contact-info">
                             <div class="contact-option-container">
                                 <div class="contact-option">
-                                    <img src="./assets/Gmail-svgrepo-com (2).svg" width="40" height="40">
+                                    <img src="./assets/icons/Gmail-svgrepo-com (2).svg" alt="Gmail icon" width="40" height="40">
                                     <span>EMAIL</span>
                                 </div>
                                 <a href="mailto:101muzi.io@gmail.com" class="email-link">
@@ -252,24 +225,24 @@
                             </div>
                             <div class="contact-option-container">
                                 <div class="contact-option">
-                                    <img src="./assets/phone-svgrepo-com.svg" width="40" height="40">
+                                    <img src="./assets/icons/phone-svgrepo-com.svg" alt="Phone icon" width="40" height="40">
                                     <span>PHONE</span>
                                 </div>
-                                <a href="mailto:101muzi.io@gmail.com" class="phone-link">
+                                <a href="tel:+26879311799" class="phone-link">
                                     +268 7931 1799
                                 </a>
                             </div>
                             <div class="follow-me-container">
                                 <h2>Follow Me</h2>
                                 <div class="social-links-container">
-                                    <a href="$" class="social-link">
-                                        <img src="./assets/gmail-svgrepo-com.svg" width="30" height="30">
+                                    <a href="mailto:101muzi.io@gmail.com" class="social-link">
+                                        <img src="./assets/icons/gmail-svgrepo-com.svg" alt="Gmail icon" width="30" height="30">
                                     </a>
-                                    <a href="$" class="social-link">
-                                        <img src="./assets/github-142-svgrepo-com.svg" width="30" height="30">
+                                    <a href="https://github.com/101muzi" class="social-link">
+                                        <img src="./assets/icons/github-142-svgrepo-com.svg" alt="GitHub icon" width="30" height="30">
                                     </a>
-                                    <a href="$" class="social-link">
-                                        <img src="./assets/linkedin-svgrepo-com.svg" width="40" height="40">
+                                    <a href="https://linkedin.com/in/101muzi" class="social-link">
+                                        <img src="./assets/icons/linkedin-svgrepo-com.svg" alt="LinkedIn icon" width="40" height="40">
                                     </a>
                                 </div>
                             </div>

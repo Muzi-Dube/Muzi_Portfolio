@@ -14,9 +14,6 @@
     --light-shadow: #ffffff3f;
     --backdrop-color: #fffefe11;
     --primary-text-color: #c9c9c9;
-
-    /* Text */
-
 }
 
 .body, html{
@@ -215,7 +212,7 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    margin: 2rem 0 5rem;
+    margin: 1rem 0 5rem;
 }
 
 .introduction-container{
@@ -229,7 +226,7 @@
 
 .owner-name{
     font-family: 'Libre Baskerville',Arial, Helvetica, sans-serif;
-    font-size: clamp(5rem, 10vw, 7rem);
+    font-size: clamp(6rem, 10vw, 7rem);
     font-weight: 600;
     letter-spacing: 5px;
     text-shadow: 10px 0px 5px var(--dark-shadow);
@@ -329,6 +326,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    text-decoration: none;
 }
 
 .hire-me-btn{
@@ -469,6 +467,16 @@
     height: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+    animation: previewIn 1s;
+}
+
+@keyframes previewIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .image-description-container{
@@ -496,6 +504,16 @@
     text-align: start;
     font-size: 1.1rem;
     margin: 0 2rem;
+    animation: desc-in 1s;
+}
+
+@keyframes desc-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .more-on-project{
@@ -515,11 +533,22 @@
     height: 50%;
 }
 
-.viewer-project-title h2{
-    font-size: 1.2rem;
+.project-desc-name{
+    font-size: clamp(1.1rem, 3vw, 1.2rem);
     font-family: 'Quicksand',Arial, Helvetica, sans-serif;
     text-align: center;
     font-weight: bold;
+    animation: project-title-in 1s;
+    margin: 0 0.5rem;
+}
+
+@keyframes project-title-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .view-project-container{
@@ -544,10 +573,19 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    transition: 0.2s ease-in-out;
     background-color: transparent;
     border: solid 3px var(--secondary);
     color: var(--primary-text-color);
+    animation: view-btn-in 1s;
+}
+
+@keyframes view-btn-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .view-project-btn:hover{
@@ -653,7 +691,6 @@
         border-radius: 10px;
         height: 95%;
         background-color: transparent;
-        scrollbar-width: none;
     }
 
     .project{
@@ -698,6 +735,10 @@
 @media (max-width: 760px) {
     .project{
         width: 100%;
+    }
+
+    .description{
+        text-align: start;
     }
 }
 
@@ -850,7 +891,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     gap: 0.5rem;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -868,7 +909,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90%;
+    height: 23rem;
     width: 22rem;
     border: 2px solid rgba(68, 68, 68, 0.482);
     border-radius: 10px;
@@ -976,6 +1017,12 @@
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
+}
+
+@media (max-width: 1340px){
+    .service-options{
+        justify-content: start;
+    }
 }
 
 @media(max-width: 1120px){
@@ -1217,7 +1264,7 @@ textarea::placeholder{
 
 .contact-option-container{
     width: 100%;
-    height: 20%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1292,6 +1339,24 @@ textarea::placeholder{
 }
 
 @media (max-width: 760px){
+
+    .contact-option-container{
+        height: 20%;
+        justify-content: end;
+    }
+
+    .contact-option{
+        flex-direction: column;
+    }
+
+    .contact-option span{
+        font-size: 1.5rem;
+    }
+
+    .contact-option-container .contact-option img{
+        width: 40px;
+        height: 40px;
+    }
     .contact-option-container a{
         font-size: 0.9rem;
     }
@@ -1326,19 +1391,6 @@ textarea::placeholder{
         left: 0.5rem;
     }
 
-    .contact-option{
-        gap: 0.1rem;
-    }
-
-    .contact-option-container img{
-        width: 25px;
-        height: 25px;
-    }
-
-    .contact-option{
-        font-size:1rem;
-    }
-
     .contact-option-container a{
         font-size: 0.7rem;
     }
@@ -1359,10 +1411,9 @@ textarea::placeholder{
     }
 }
 
-
 footer{
     width: 100vw;
-    height: 5vw;
+    height: 10vw;
 }
 
 .copyright-info-container{
