@@ -3,11 +3,20 @@ export function projectsListHandler(){
 
     const projectsData = [
         {
+            id: 'MADISON_ATTORNEYS',
+            name: 'MADISON ATTORNEYS',
+            description: 'A law firm landing page mock designed to showcase services and attract potential clients.',
+            link: 'https://madisonattorneys.netlify.app/',
+            thumbnail: '../assets/MD-thumbnail.webp',
+            previewImg: '../assets/MD-preview.webp',
+            previewImgPhone: '../assets/MD-preview-phone.webp'
+        },
+        {
             id: 'icyou',
             name: 'iCYOU: Instagram Analyzer',
             description: 'A website that analyzes your data to find non followers on your profile.',
             link: 'https://icyou.netlify.app/',
-            thumbnail: '../assets/icyou-thumbnail.png',
+            thumbnail: '../assets/icyou-thumbnail.webp',
             previewImg: '../assets/icyou-preview.png',
             previewImgPhone: '../assets/icyou-preview-phone.jpg'
         },
@@ -16,7 +25,7 @@ export function projectsListHandler(){
             name: 'GradeX: Grade Calculator',
             description: 'Calculator for students to get fast feedback on their grades, i.e. GPA, Grade Average, APS score, etc.',
             link: 'https://gradexcalc.netlify.app/',
-            thumbnail: '../assets/gradex-thumbnail.png',
+            thumbnail: '../assets/gradex-thumbnail.webp',
             previewImg: '../assets/gradex-preview.png',
             previewImgPhone: '../assets/gradex-preview-phone.jpg'
         },
@@ -25,9 +34,9 @@ export function projectsListHandler(){
             name: 'Dentalz: Dental Services Landing Page',
             description: 'Minimalist dental landing page for a "made up" dental service clinic.',
             link: 'https://dentalzclinic.netlify.app/',
-            thumbnail: '../assets/dentalz-thumbnail.png',
-            previewImg: '../assets/dentalz-preview.png',
-            previewImgPhone: '../assets/dentalz-preview-phone.jpg'
+            thumbnail: '../assets/dentalz-thumbnail.webp',
+            previewImg: '../assets/dentalz-preview.webp',
+            previewImgPhone: '../assets/dentalz-preview-phone.webp'
         }
     ];
 
@@ -60,6 +69,9 @@ function viewControl(projectsData){
     const projectName = document.querySelector('.viewer-project-title');
     const mobileQuery = window.matchMedia("(max-width: 760px)");
 
+    // Track the currently selected project
+    let currentProject = projectsData[0];
+
     // Helper function to update preview image based on screen size
     const updatePreviewImage = (projectObj) => {
         if (mobileQuery.matches){
@@ -74,19 +86,17 @@ function viewControl(projectsData){
     };
 
     // Set initial preview
-    updatePreviewImage(projectsData[0]);
+    updatePreviewImage(currentProject);
 
     // Listen for screen resize changes once (outside the click handler)
     mobileQuery.addEventListener('change', () => {
-        const activeProject = projectsData.find(proj => proj.id === document.querySelector('.project').dataset.btnid);
-        if (activeProject) {
-            updatePreviewImage(activeProject);
-        }
+        updatePreviewImage(currentProject);
     });
 
     projects.forEach(project => {
         project.addEventListener('click',() => {
             const projectObj = projectsData.find(proj => proj.id === project.dataset.btnid);
+            currentProject = projectObj; // Update the current project
 
             // Update preview immediately on click
             updatePreviewImage(projectObj);
