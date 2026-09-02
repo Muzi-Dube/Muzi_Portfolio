@@ -914,6 +914,7 @@
     flex: 0 0 auto;
     scrollbar-width: none;
     scroll-behavior: smooth;
+    padding: 2rem 0;
 }
 
 .service-options::-webkit-scrollbar{
@@ -1152,6 +1153,29 @@
     background-color: #0707079c;
     backdrop-filter: blur(2px);
     transition: 0.2s ease-in-out;
+    position: relative;
+}
+
+.popup-container{
+    display: none;
+    background: #2f2f2f;
+    position: absolute;
+    top: 0;
+    color: #e3e3e3;
+    width: 20rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 0.5px var
+}
+
+.popup-container span{
+    font-size: 1.2rem;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .contact-header-container{
@@ -1279,7 +1303,7 @@ textarea::placeholder{
 }
 
 .send-message-btn{
-    margin-right: 1rem;
+    margin: 0.5rem 1rem;
     text-decoration: none;
     text-align: center;
     width: 10em;

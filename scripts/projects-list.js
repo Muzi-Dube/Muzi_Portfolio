@@ -3,15 +3,6 @@ export function projectsListHandler(){
 
     const projectsData = [
         {
-            id: 'MADISON_ATTORNEYS',
-            name: 'MADISON ATTORNEYS',
-            description: 'A law firm landing page mock designed to showcase services and attract potential clients.',
-            link: 'https://madisonattorneys.netlify.app/',
-            thumbnail: '../assets/MD-thumbnail.webp',
-            previewImg: '../assets/MD-preview.webp',
-            previewImgPhone: '../assets/MD-preview-phone.webp'
-        },
-        {
             id: 'icyou',
             name: 'iCYOU: Instagram Analyzer',
             description: 'A website that analyzes your data to find non followers on your profile.',
@@ -19,6 +10,15 @@ export function projectsListHandler(){
             thumbnail: '../assets/icyou-thumbnail.webp',
             previewImg: '../assets/icyou-preview.png',
             previewImgPhone: '../assets/icyou-preview-phone.jpg'
+        },
+        {
+            id: 'MADISON_ATTORNEYS',
+            name: 'MADISON ATTORNEYS',
+            description: 'A law firm landing page mock designed to showcase services and attract potential clients.',
+            link: 'https://madisonattorneys.netlify.app/',
+            thumbnail: '../assets/MD-thumbnail.webp',
+            previewImg: '../assets/MD-preview.webp',
+            previewImgPhone: '../assets/MD-preview-phone.webp'
         },
         {
             id: 'gradex',

@@ -1,3 +1,5 @@
+const sendMessageBtn = document.querySelector('.send-message-btn');
+
 export function emailHandler(){
 
     const contactForm = document.querySelector('.contact-form');
@@ -19,7 +21,7 @@ export function emailHandler(){
 
         emailjs.send('service_tig1kpp', 'template_eiywkfa', templateParams)
             .then((response) => {
-                alert('Your message has been sent successfully!');
+                sendMessageBtn.style.display = 'none';
                 contactForm.reset();
             }, (error) => {
                 alert('Failed to send your message. Please try again later.');
